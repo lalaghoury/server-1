@@ -1,0 +1,145 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin: 20px 0 50px 0;
+
+  .hero-section-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+
+    .btn-h {
+      display: flex;
+      gap: 12px;
+
+      button {
+        width: 200px;
+        height: 40px;
+      }
+    }
+
+    h1 {
+      color: var(--Black, #000);
+      font-size: 64px;
+      font-weight: 700;
+    }
+    p {
+      color: var(--Gray--2, #878787);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+    }
+
+    button {
+      width: 265px;
+      padding: 12px;
+    }
+
+    .dis {
+      display: none;
+    }
+  }
+
+  .hero-section-image {
+    width: 70%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-container {
+    gap: 40px;
+
+    .hero-section-text {
+      h1 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 52px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .hero-container {
+    .hero-section-text {
+      width: 40%;
+      gap: 17px;
+
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .hero-section-image {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero-container {
+    flex-wrap: wrap;
+    .hero-section-text {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+      .text-h {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 7.4vwvw;
+          line-height: 1.3;
+        }
+      }
+      p {
+        font-size: 2.5vw;
+        text-align: center;
+        line-height: 1.6;
+      }
+      .btn-h {
+        display: flex;
+        gap: 12px;
+
+        button {
+          width: 125px;
+        }
+      }
+      .p-h {
+        font-style: italic;
+      }
+    }
+    .hero-section-image {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero-container {
+    .hero-section-text {
+      p {
+        width: 90%;
+      }
+    }
+  }
+}

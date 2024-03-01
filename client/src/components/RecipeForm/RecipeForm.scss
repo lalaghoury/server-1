@@ -1,0 +1,100 @@
+.recipe-form {
+  margin: auto;
+  .ant-upload-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 160px;
+    margin: auto;
+    cursor: pointer;
+  }
+  .cooking-time-input,
+  .prep-time-input {
+    width: 200px;
+  }
+}
+.antd-form-input {
+  margin-top: 6px;
+}
+
+.less {
+  width: 130px;
+}
+.facts {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  :where(.css-dev-only-do-not-override-1qhpsh8).ant-form-item
+    .ant-form-item-label
+    > label {
+    color: var(--Gray--3, #a5a5a5);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.disable-hover {
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(181, 93, 81, 0.97);
+  color: white;
+  border-color: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.show-on-recipe{
+  align-self: flex-start;
+}
+
+.disable-hover:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(165, 42, 42) !important;
+  color: white !important;
+  border-color: none !important;
+  border: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1qhpsh8).ant-form-item
+  .ant-form-item-label
+  > label {
+  color: var(--Black, #000);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+:where(.css-dev-only-do-not-override-1qhpsh8).ant-form-item
+  .ant-form-item-label
+  > label.ant-form-item-required:not(
+    .ant-form-item-required-mark-optional
+  )::before {
+  content: "";
+}
+
+:where(.css-dev-only-do-not-override-1qhpsh8).ant-input {
+  padding: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .recipe-form {
+    .cooking-time-input,
+    .prep-time-input {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recipe-form {
+    .cooking-time-input,
+    .prep-time-input {
+      width: 100%;
+    }
+  }
+}

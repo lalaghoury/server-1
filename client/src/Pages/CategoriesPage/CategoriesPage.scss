@@ -1,0 +1,14 @@
+.category-page {
+  width: 100%;
+  min-height: calc(70vh - 150px);
+
+  .s-r {
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+
+    .s-r-1 {
+      opacity: 0.6;
+    }
+  }
+}

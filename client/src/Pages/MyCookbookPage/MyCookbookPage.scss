@@ -1,0 +1,20 @@
+.site-card-wrapper {
+  .responsive-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .ant-row {
+    margin: 0 auto;
+    max-width: 1200px; // Adjust max-width as needed
+  }
+
+  .ant-col {
+    margin-bottom: 16px;
+  }
+}

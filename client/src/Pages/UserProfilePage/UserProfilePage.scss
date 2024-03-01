@@ -1,0 +1,192 @@
+.user-profile-page {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  .profile-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    .user-image {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      .rotate {
+        position: absolute;
+        rotate: 330deg;
+        margin-bottom: 160px;
+        margin-right: 90px;
+        img {
+          width: 65px;
+          height: 55px;
+        }
+      }
+      .rounded {
+        width: 135px;
+        height: 140px;
+        object-fit: cover;
+        object-position: center;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+    span {
+      display: flex;
+      gap: 15px;
+      h4 {
+        font-weight: 500;
+      }
+    }
+    .profile-head-details {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      padding: 20px;
+      .details-user-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        h4 {
+          opacity: 0.8;
+        }
+      }
+      hr {
+        width: 70px;
+        rotate: 90deg;
+      }
+    }
+  }
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    .user-form {
+      width: 700px;
+      .user-form-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    }
+    .user-plan {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      .user-plan-div {
+        border: 1px solid black;
+        border-radius: 8px;
+        text-align: center;
+        width: 48%;
+        padding: 10px;
+        .s1 {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          span {
+            img {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
+        .s2 {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .user-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .user-newsletter-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+      gap: 15px;
+      width: 30%;
+      .user-btn {
+        width: 100px;
+        padding: 20px 12px !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .profile-details .user-plan .user-plan-div,
+    .user-newsletter .user-newsletter-buttons {
+      width: 48%;
+    }
+    .user-newsletter .user-newsletter-buttons {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .user-profile-page {
+    .profile-details {
+      .user-plan {
+        width: 100%;
+        .user-plan-div {
+          width: 100%;
+        }
+      }
+      .user-form {
+        overflow: hidden;
+        width: 100%;
+        .user-form-wrap {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .profile-head {
+      width: 100%;
+      .profile-head-details {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .user-profile-page {
+    .profile-details {
+      .user-form {
+        width: 100%;
+        .user-form-wrap {
+          max-width: 100%;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

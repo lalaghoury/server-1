@@ -1,0 +1,25 @@
+.category-details {
+  width: 100%;
+  .category-details-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    span {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .dropdown {
+        color: rgba(181, 93, 81, 0.97) !important;
+        border: none;
+        outline: none;
+      }
+      .dropdown:hover {
+        transition: all 0.2s ease-in-out;
+        scale: 1.03;
+        color: rgba(181, 93, 81, 0.97) !important;
+      }
+    }
+  }
+}
