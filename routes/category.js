@@ -7,7 +7,6 @@ const CategoryModel = require("../schemas/CategorySchema");
 router.get("/names", async (req, res) => {
   try {
     const categories = await CategoryModel.find().select("categoryname");
-    console.log(categories);
     res.status(200).json(categories);
   } catch (error) {
     console.error(error);

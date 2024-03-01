@@ -14,7 +14,7 @@ const userSchema = new Schema(
     userbigimage: {
       type: String,
       default:
-        "http://res.cloudinary.com/dslrkvmwn/image/upload/v1707222135/images/sgdqeq8z9fiwpkdiwo54.png",
+        "https://res.cloudinary.com/dslrkvmwn/image/upload/v1707222135/images/sgdqeq8z9fiwpkdiwo54.png",
     },
     recipes: [{ type: Schema.Types.ObjectId, ref: "Recipe" }],
     blogs: [{ type: Schema.Types.ObjectId, ref: "Blog" }],

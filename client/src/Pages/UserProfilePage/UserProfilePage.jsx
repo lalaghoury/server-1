@@ -55,9 +55,6 @@ function UserProfilePage() {
       onOk() {
         handleUnsubscribe();
       },
-      onCancel() {
-        console.log("Unsubscribe cancelled");
-      },
     });
   };
 
@@ -81,9 +78,6 @@ function UserProfilePage() {
       title: "Confirm Update",
       content: "Are you sure you want to update your credentials?",
       onOk: handleUserCredentialsUpdate,
-      onCancel() {
-        console.log("Cancel update");
-      },
     });
   };
 
@@ -143,7 +137,6 @@ function UserProfilePage() {
         fullname,
       });
       if (response.data.success) {
-        console.log(`User Updated Successfully`, response.data.user);
         setAuth((previousAuth) => ({
           ...previousAuth,
           user: response.data.user,
@@ -164,7 +157,6 @@ function UserProfilePage() {
         userimage: recipe_imageurl,
       });
       if (response.data.success) {
-        console.log(`Recipe Image Changed Successfully`, response.data.user);
         setAuth((previousAuth) => ({
           ...previousAuth,
           user: response.data.user,

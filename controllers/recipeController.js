@@ -85,8 +85,6 @@ const recipeController = {
         path: "saves",
       });
 
-      console.log(user);
-
       res.status(200).json({ user, success: true });
     } catch (error) {
       console.error(error);

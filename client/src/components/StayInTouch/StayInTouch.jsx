@@ -13,9 +13,7 @@ function StayInTouch({ userId }) {
         email: values.email,
         userId,
       });
-      console.log(response);
       const data = response.data;
-      console.log(data);
       if (data.success) {
         message.success(data.message);
         const updatedUser = { ...auth.user, newsletter: data.user.newsletter };

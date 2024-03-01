@@ -43,7 +43,6 @@ function EditRecipe() {
       setLoading(true);
       axios.get("/api/category/names").then((response) => {
         setCategories(response.data);
-        console.log(response.data);
       });
       const recipe = await getSingleRecipe(recipe_id);
       setRecipe(recipe);
@@ -51,7 +50,6 @@ function EditRecipe() {
       setRecipe_imageurl(recipe.recipe_imageurl);
       setShowImage(true);
       setLoading(false);
-      console.log(recipe);
     };
     fetchData();
   }, [getSingleRecipe, recipe_id]);
@@ -99,10 +97,6 @@ function EditRecipe() {
             `https://mushy-jade-sundress.cyclic.app/recipe/${recipe_id}`
           );
           if (response.data.success) {
-            console.log(
-              `Recipe Deleted Successfull`,
-              response.data.deletedRecipe
-            );
             message.success("Recipe Deleted Successfully", 2);
             setRecipe_imageurl("");
             setShowImage(false);

@@ -8,7 +8,6 @@ const CloudinaryFunctions = require("../controllers/CloudinaryImageUpload");
 // POST route to upload image
 router.post("/", upload.single("image"), async (req, res) => {
   const response = await CloudinaryFunctions.upload(req.file.path);
-  console.log(response);
   // Save image to image model in database
   try {
     const image = await ImageModel.create({ url: response.secure_url });
@@ -29,6 +28,5 @@ router.get("/", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-
 
 module.exports = router;

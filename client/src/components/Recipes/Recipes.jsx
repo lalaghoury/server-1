@@ -35,7 +35,6 @@ function Recipes({ slice, userShow }) {
   }
   const handleSortChange = (value) => {
     setNext(!next);
-    console.log(`Selected sort order: ${value}`);
   };
 
   return (

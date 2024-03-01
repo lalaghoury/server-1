@@ -233,7 +233,6 @@ const Search = () => {
 
   const handleSearch = () => {
     if (searchTerm.trim()) {
-      console.log(`Searching for: ${searchTerm}`);
       navigate(`/search?q=${searchTerm}`);
       setShowSearch(false);
     }

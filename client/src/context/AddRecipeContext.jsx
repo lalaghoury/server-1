@@ -67,7 +67,6 @@ export const AddRecipeProvider = ({ children }) => {
         ...values,
         recipe_imageurl,
       });
-      console.log("Server response:", response.data);
       if (response.data.success) {
         message.success(response.data.message);
         form.resetFields();
@@ -105,7 +104,6 @@ export const AddRecipeProvider = ({ children }) => {
         user: [userId],
         image: recipe_imageurl,
       });
-      console.log("Server response:", response.data);
       if (response.data.success) {
         message.success(response.data.message);
         form.resetFields();

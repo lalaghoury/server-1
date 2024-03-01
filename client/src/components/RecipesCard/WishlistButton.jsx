@@ -36,8 +36,6 @@ const WishlistButton = ({ saves, recipeId, onAction }) => {
 
     try {
       const endpoint = `/api/user/${action}/${auth.user._id}/${recipeId}`;
-      console.log(endpoint);
-      console.log(recipeId);
       const response = await axios.post(endpoint);
       const { success, message: responseMessage } = response.data;
       if (success) {

@@ -31,7 +31,7 @@ function SignUpPage() {
       <div className="signup-page">
         <div className="signup-img">
           <img
-            src="http://res.cloudinary.com/dslrkvmwn/image/upload/v1707028163/images/bb2a7jwwkymlpuravokr.png"
+            src="https://res.cloudinary.com/dslrkvmwn/image/upload/v1707028163/images/bb2a7jwwkymlpuravokr.png"
             alt="img"
           />
         </div>
