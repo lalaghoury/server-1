@@ -1,7 +1,0 @@
-# .gitignore file
-
-# Node.js dependencies
-node_modules/
-.vercel
-package-lock.json
-
