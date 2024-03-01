@@ -94,7 +94,7 @@ function EditRecipe() {
         content: "This action cannot be undone.",
         onOk: async () => {
           const response = await axios.delete(
-            `https://mushy-jade-sundress.cyclic.app/recipe/${recipe_id}`
+            `/api/recipe/${recipe_id}`
           );
           if (response.data.success) {
             message.success("Recipe Deleted Successfully", 2);
