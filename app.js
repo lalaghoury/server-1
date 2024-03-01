@@ -98,8 +98,8 @@ app.get("*", (req, res) => {
 ///////////////////////////////////////////////////////////////////////////////
 
 // Connect to database and  Listen
-app.listen(PORT, () => {
-  const db = require("./model/db");
-  db();
-  console.log(`Server is running on port ${PORT}`);
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
 });
